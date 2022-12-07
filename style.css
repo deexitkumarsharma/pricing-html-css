@@ -18,7 +18,7 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 5rem;
-    color: hsl(233, 13%, 38%);
+    color: hsl(232, 13%, 33%);
     padding: 2rem;
 }
 
@@ -37,6 +37,10 @@ body {
     align-items: center;
 }
 
+.details {
+    margin: 20px;
+}
+
 /* cards-row */
 
 .cards {
@@ -44,19 +48,19 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     padding-top: 50px;
 }
 
 .card {
-    min-width: 280px;
+    width: 280px;
     align-self: center;
     text-align: center;
-    border: 2px;
-    box-shadow: 0 2px 10px hsl(235, 16%, 58%);
+    border: 1px;
+    box-shadow: 0 2px 16px hsl(240, 78%, 98%);
     background-color: white;
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
 }
 
 .card:hover {
@@ -158,4 +162,12 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+@media screen and (min-width: 900px) {
+
+    html,
+    body {
+        min-height: 100%;
+    }
 }
